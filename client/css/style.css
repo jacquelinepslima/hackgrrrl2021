@@ -1,0 +1,174 @@
+/* corpo */
+
+body {
+
+    font-family: Nunito, sans-serif;
+    color:rgb(255, 253, 253)
+}
+
+h1, h2, h3 {
+
+    font-family: Asap, sans-serif;
+    color:white;
+    text-align: center;
+}
+
+.botao {
+    color: black;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: lightseagreen;
+    font-size: .9em;
+    border-radius: 10px;
+
+}
+
+
+/* navegação */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:lightseagreen;
+}
+
+nav > a {
+    text-decoration: none;
+    color:white;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: roboto, sans-serif;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.button {
+    background:#50E3C2; 
+    border-radius: 6px; 
+    padding: 15px; 
+    cursor: pointer; 
+    color: #fff; 
+    border: none; 
+    font-size: 16px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20x;
+    background-color:lightseagreen;
+    color: black;
+}
+
+#sobre h2 {
+    color: white;
+}
+
+#sobre p {
+    margin-bottom: 2.5mm;
+    max-width: 1000px;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#contato h2 {
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: lightseagreen;
+    color:black;
+
+}
+
+footer a {
+    text-decoration: none;
+    color:white
+}
+
+@media screen and (min-width: 768px) {
+
+    /*nav*/
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*cabeçalho*/
+
+    header {
+        height: 60px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-width: 250px;
+    }
+
+    /*contato*/
+
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    #contato h2, #contato p {
+        width: 100%;
+    }
+}
