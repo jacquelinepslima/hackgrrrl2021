@@ -1,44 +1,99 @@
-<html>  
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariel - AI for Advertising Analysis</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Nunito:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/normalize.css">    
-<link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Ariel - IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Nunito:wght@300;400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<nav>
+    <nav>
+        <a href="#">Ariel - AI</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <a href="#">Ariel - IA</a>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
-</nav>
-<header id="topo">
-    <form>
-        <input type="text" placeholder="Insira o texto da sua propaganda" name="texto" required>
-        <a href="toneanalyze.js"><button>Analisar</button></a>
-    </form>
-</header>
+    <header id="home">
+        <div class="hero-content">
+            <h1>AI-Powered Advertising Analysis</h1>
+            <p class="hero-subtitle">Analyze your advertising text with artificial intelligence to improve tone, inclusivity, and effectiveness</p>
+            
+            <div class="analysis-form-container">
+                <h2>Start Your Analysis</h2>
+                <p class="form-instructions">Enter your advertising text below and get instant AI-powered insights</p>
+                
+                <form id="analysis-form">
+                    <div class="input-group">
+                        <label for="text-input">Advertising Text</label>
+                        <textarea 
+                            id="text-input"
+                            name="texto" 
+                            placeholder="Paste or type your advertising text here... (minimum 10 characters)"
+                            rows="4"
+                            required
+                        ></textarea>
+                        <div class="input-help">
+                            <span class="char-count">0 characters</span>
+                            <span class="min-required">Minimum: 10 characters</span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="analyze-btn">
+                        <span class="btn-text">🔍 Analyze Text</span>
+                        <span class="btn-loading" style="display: none;">⏳ Analyzing...</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
 
-<section id="sobre">
-    <h2>Sobre</h2>
-    <p>Ariel, é uma inteligência artificial treinada com watson para realizar a análise de palavras que contêm determinados sentimentos assim reconhecendo nesse texto as palavras chaves que avaliam as diretrizes e dados de campanhas publicitárias.
-        Nossa IA é  flexível podendo ser aplicada em qualquer plataforma, tanto web, como mobile ou até mesmo em uma extensão do navegador
-        Certamente uma ferramenta excepcional para a inclusão de seu produto</p>
-</section>
+    <section id="about">
+        <h2>About Ariel AI</h2>
+        <div class="about-content">
+            <div class="about-features">
+                <div class="feature">
+                    <h3>🎯 Tone Analysis</h3>
+                    <p>Detect emotional tones and linguistic characteristics in your advertising text</p>
+                </div>
+                <div class="feature">
+                    <h3>💡 Smart Suggestions</h3>
+                    <p>Receive personalized recommendations to improve inclusivity and effectiveness</p>
+                </div>
+                <div class="feature">
+                    <h3>📊 Quality Metrics</h3>
+                    <p>Get detailed insights about your text's emotional balance and diversity</p>
+                </div>
+            </div>
+            <p class="about-description">
+                Ariel is an artificial intelligence trained with IBM Watson to analyze advertising text and identify potential biases, 
+                helping create more inclusive and effective communication campaigns. Our AI is flexible and can be applied on any platform, 
+                whether web, mobile or even a browser extension.
+            </p>
+        </div>
+    </section>
 
-<section id="contato">
-    <h2>Ficou com dúvidas? Entre em contato</h2>
-        <a href="mailto:contato@ariel.com.br"><img src= "img/contact.png" alt="contatos" width="50px">
-</section>
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-content">
+            <p>Have questions about Ariel AI or need help with your analysis?</p>
+            <a href="mailto:contact@ariel.com" class="contact-button">
+                <img src="img/contact.png" alt="Contact icon" width="50">
+                <span>contact@ariel.com</span>
+            </a>
+        </div>
+    </section>
 
-<footer>
-    <a href="#home">Voltar</a>
-    <p>Desenvolvido pelo Time 14</p>
-</footer>
+    <footer>
+        <a href="#home">Back to Top</a>
+        <p>Developed by Team 14 - Hack Grrrl 2021</p>
+    </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html> 

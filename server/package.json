@@ -1,18 +1,27 @@
 {
-  "name": "server",
+  "name": "ariel-ai-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "toneanalyze.js",
+  "description": "Backend for advertising analysis using IBM Watson Tone Analyzer",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["ai", "watson", "tone-analyzer", "advertising", "analysis"],
+  "author": "Team 14 - Hack Grrrl 2021",
+  "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "ibm-watson": "^6.0.4"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
